@@ -1,0 +1,2 @@
+This utility will give you simple java script/Jquery library for ratings
+Please run the example and see.

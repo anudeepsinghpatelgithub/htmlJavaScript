@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Ratings</title>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/rating.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	
+	
+</head>
+<body>
+	<div class="halfWidthDiv">
+		<label for="">Manufucture Quality</label>
+		<span class="ratings ratings-mq mq"> <i class="fa fa-star-o" id="mq1" sl="mq" star="1" alt="Terrible" title="Terrible"></i> <i class="fa fa-star-o" id="mq2" sl="mq" star="2" alt="Poor" title="Poor"></i> <i class="fa fa-star-o" id="mq3" sl="mq" star="3" alt="Average" title="Average"></i> <i class="fa fa-star-o" id="mq4" sl="mq" star="4" alt="Very Good" title="Very Good"></i> <i class="fa fa-star-o" id="mq5" sl="mq" star="5" alt="Excellent" title="Excellent"></i> </span>
+		<span id="status-mq" class="status"></span>
+		<input class="given-rating" type="hidden" id="selected-mq" rateLabel="Manufucture Quality" value=""/>
+
+		<br/>
+		<label for="">Milage</label>
+		<span class="ratings ratings-fuel fuel"> <i class="fa fa-star-o" id="fuel1" sl="fuel" star="1" alt="Terrible" title="Terrible"></i> <i class="fa fa-star-o" id="fuel2" sl="fuel" star="2" alt="Poor" title="Poor"></i> <i class="fa fa-star-o" id="fuel3" sl="fuel" star="3" alt="Average" title="Average"></i> <i class="fa fa-star-o" id="fuel4" sl="fuel" star="4" alt="Very Good" title="Very Good"></i> <i class="fa fa-star-o" id="fuel5" sl="fuel" star="5" alt="Excellent" title="Excellent"></i> </span>
+		<span id="status-fuel" class="status"></span>
+		<input class="given-rating" type="hidden" id="selected-fuel" rateLabel="Milage" value=""/>
+
+		<br/>
+
+		<label for="">Seating Comfort</label>
+		<span class="ratings ratings-seatingComfort seatingComfort"> <i class="fa fa-star-o" id="seatingComfort1" sl="seatingComfort" star="1" alt="Terrible" title="Terrible"></i> <i class="fa fa-star-o" id="seatingComfort2" sl="seatingComfort" star="2" alt="Poor" title="Poor"></i> <i class="fa fa-star-o" id="seatingComfort3" sl="seatingComfort" star="3" alt="Average" title="Average"></i> <i class="fa fa-star-o" id="seatingComfort4" sl="seatingComfort" star="4" alt="Very Good" title="Very Good"></i> <i class="fa fa-star-o" id="seatingComfort5" sl="seatingComfort" star="5" alt="Excellent" title="Excellent"></i> </span>
+		<span id="status-seatingComfort" class="status"></span>
+		<input class="given-rating" type="hidden" id="selected-seatingComfort" rateLabel="Seating Comfort" value=""/>
+		<br/>
+
+		<label for="">Riding Comfort</label>
+		<span class="ratings ratings-ridingComfort ridingComfort"> <i class="fa fa-star-o" id="ridingComfort1" sl="ridingComfort" star="1" alt="Terrible" title="Terrible"></i> <i class="fa fa-star-o" id="ridingComfort2" sl="ridingComfort" star="2" alt="Poor" title="Poor"></i> <i class="fa fa-star-o" id="ridingComfort3" sl="ridingComfort" star="3" alt="Average" title="Average"></i> <i class="fa fa-star-o" id="ridingComfort4" sl="ridingComfort" star="4" alt="Very Good" title="Very Good"></i> <i class="fa fa-star-o" id="ridingComfort5" sl="ridingComfort" star="5" alt="Excellent" title="Excellent"></i> </span>
+		<span id="status-ridingComfort" class="status"></span>
+		<input class="given-rating" type="hidden" id="selected-ridingComfort" rateLabel="Riding Comfort" value=""/>
+
+	</div>
+
+	<div class="halfWidthDiv">
+		<label for="">Handling</label>
+		<span class="ratings ratings-handling handling"> <i class="fa fa-star-o" id="handling1" sl="handling" star="1" alt="Terrible" title="Terrible"></i> <i class="fa fa-star-o" id="handling2" sl="handling" star="2" alt="Poor" title="Poor"></i> <i class="fa fa-star-o" id="handling3" sl="handling" star="3" alt="Average" title="Average"></i> <i class="fa fa-star-o" id="handling4" sl="handling" star="4" alt="Very Good" title="Very Good"></i> <i class="fa fa-star-o" id="handling5" sl="handling" star="5" alt="Excellent" title="Excellent"></i> </span>
+		<span id="status-handling" class="status"></span>
+		<input class="given-rating" type="hidden" id="selected-handling" rateLabel="Handling" value=""/>
+		<br/>
+
+		<label for="">Power/Pickup</label>
+		<span class="ratings ratings-power power"> <i class="fa fa-star-o" id="power1" sl="power" star="1" alt="Terrible" title="Terrible"></i> <i class="fa fa-star-o" id="power2" sl="power" star="2" alt="Poor" title="Poor"></i> <i class="fa fa-star-o" id="power3" sl="power" star="3" alt="Average" title="Average"></i> <i class="fa fa-star-o" id="power4" sl="power" star="4" alt="Very Good" title="Very Good"></i> <i class="fa fa-star-o" id="power5" sl="power" star="5" alt="Excellent" title="Excellent"></i> </span>
+		<span id="status-power" class="status"></span>
+		<input class="given-rating" type="hidden" id="selected-power" rateLabel="Power/Pickup" value=""/>
+		<br/>
+
+		<label for="">Reliablity</label>
+		<span class="ratings ratings-rel rel"> <i class="fa fa-star-o" id="rel1" sl="rel" star="1" alt="Terrible" title="Terrible"></i> <i class="fa fa-star-o" id="rel2" sl="rel" star="2" alt="Poor" title="Poor"></i> <i class="fa fa-star-o" id="rel3" sl="rel" star="3" alt="Average" title="Average"></i> <i class="fa fa-star-o" id="rel4" sl="rel" star="4" alt="Very Good" title="Very Good"></i> <i class="fa fa-star-o" id="rel5" sl="rel" star="5" alt="Excellent" title="Excellent"></i> </span>
+		<span id="status-rel" class="status"></span>
+		<input class="given-rating" type="hidden" id="selected-rel" rateLabel="Reliablity" value=""/>
+
+	</div>
+	<br/>
+	<div class="buttonSub">
+		<input type="button" value="Get ratings" id="getSelectedratings"/>
+	</div>
+	<p id="status"></p>
+	<div>
+		<p id="avgRatings"></p>
+		<p id="fullratingsData"></p>
+	</div>
+	<script src="js/rating.js"></script>
+</body>
+</html>
